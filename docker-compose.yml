@@ -1,0 +1,9 @@
+services:
+  app:
+    image: ghcr.io/jorge-2022/hogwarts_backend_991:latest
+    container_name: springboot_hogwarts
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    restart: always
